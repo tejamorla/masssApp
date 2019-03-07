@@ -1,0 +1,102 @@
+<!--<style>
+	#navbar {
+  overflow: hidden;
+  background-color: #64A737;
+}
+
+</style>
+
+<header-->
+
+<style>
+	.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#navicon").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+	<div class="sticky" >
+	<div class="header" id="navbar">
+		<div class="container">
+			<div class="header-main">
+				<div class="logo">
+					<a href="#Home"><h1>MASSS</h1></a>
+				</div>
+				<div class="head-right">	   		
+					<div class="top-nav">
+						<span class="menu"><img src="images/nav-icon.png" id="navicon" alt=""> </span>
+						<ul id="panel">
+							<li><a href="#Home"  class="active"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+
+							<li class="dropdown nav-item">
+								<a href="" class="nav-link" data-toggle="dropdown">
+								  <span class="glyphicon glyphicon-info-sign"></span>Engage with us
+								  <b class="caret"></b>
+								 </a>
+								 <ul class="dropdown-menu">
+									<li><a href="#CSR" class="dropdown-item" href="">CSR</a></li>
+									<li><a href="#Internship" class="dropdown-item" href="">Internship</a></li>
+									<li><a href="#Volunteer" class="dropdown-item" href="">Volunteer</a></li>
+								</ul>
+								</li>							
+							<li  class="dropdown nav-item"><a href="" class="nav-link"><span class="glyphicon glyphicon-certificate"></span>Projects
+							 <b class="caret"></b></a>
+							 <ul class="dropdown-menu">
+									<li><a href="#ProjectForYoung" class="dropdown-item" href="">Projects for Young at Risk</a></li>
+									<li><a href="#educational-projects" class="dropdown-item" href="">Education Projects</a></li>
+									<li><a href="#skill-training"class="dropdown-item" href="">Skill Training</a></li>
+									<li><a href="community-development"class="dropdown-item" href="">Community Development</a></li>
+									<li><a class="dropdown-item" href="">CREAM</a></li>
+								</ul>
+							</li>	
+							<li><a href=""><span class="glyphicon glyphicon-link"></span>Our Partners</a></li>								
+							<li class="dropdown nav-item"><a href="" class="nav-link"><span class="glyphicon glyphicon-tags"></span>Publications
+							<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="">Annual Reports</a></li>
+									<li><a class="dropdown-item" href="">Newsletters</a></li>
+									<li><a class="dropdown-item" href="">CREAM 1 Interim Report</a></li>
+									<li><a class="dropdown-item" href="">CREAM 1 Full Report</a></li>
+									<li><a class="dropdown-item" href="">CREAM PAR Report</a></li>
+									<li><a class="dropdown-item" href="">Resource Books</a></li>
+									<li><a class="dropdown-item" href="">Brochure</a></li>
+								</ul>
+							</li>
+							<li><a href=""><span class="glyphicon glyphicon-tint"></span>CSR</a></li>
+							<li><a href=""><span class="glyphicon glyphicon-earphone"></span>Contact</a></li>
+							<li><a href=""><span class="glyphicon glyphicon-heart"></span>Donate</a></li>
+							<div class=""> </div>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>	
+		</div>
+	</div>
+</div>
+	<!--//header-->
+	<!--<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>-->

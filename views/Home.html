@@ -1,0 +1,964 @@
+<style>
+    .heading h5:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    
+    h5 {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .img-fullwidth {
+        height: 150px;
+        width: 100%;
+    }
+    
+    h5:before,
+    h5:after {
+        background-color: #000;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 15%;
+    }
+    
+    #ns1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/e4.jpg);
+        background-size: cover;
+        color: #fff;
+        height: 250px;
+    }
+    
+    #ns1 h2 {
+        padding-top: 17px;
+        padding-bottom: 0px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 34px;
+        text-align: center;
+        font-weight: 900;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    #ns1 p {
+        padding: 30px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        padding-top: 0px;
+        text-align: center;
+        line-height: 21px;
+    }
+    
+    #ns1:hover {
+        background: linear-gradient(rgba(228, 169, 58, 0.86), rgba(0, 0, 0, 0.7)), url(images/e4.jpg);
+        background-size: cover;
+        height: 250px;
+        color: #000 !important;
+    }
+    
+    #ns2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/e2.jpg);
+        background-size: cover;
+        color: #fff;
+        height: 250px;
+    }
+    
+    #ns2 h2 {
+        padding-top: 17px;
+        padding-bottom: 0px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 34px;
+        text-align: center;
+        font-weight: 900;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    #ns2 p {
+        padding: 30px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        padding-top: 0px;
+        text-align: center;
+        line-height: 21px;
+    }
+    
+    #ns2:hover {
+        background: linear-gradient(rgba(228, 169, 58, 0.86), rgba(0, 0, 0, 0.7)), url(images/e2.jpg);
+        background-size: cover;
+        height: 250px;
+        color: #000 !important;
+    }
+    
+    #ns3 {
+        background: linear-gradient(rgba(243, 175, 54, 1), rgba(223, 171, 64, 0.7)), url(images/e3.jpg);
+        background-size: cover;
+        color: red;
+        background-color: #e8af45;
+        height: 250px;
+    }
+    
+    #ns3 h2 {
+        padding-top: 17px;
+        padding-bottom: 0px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 34px;
+        text-align: center;
+        font-weight: 900;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    #ns3 p {
+        padding: 30px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        padding-top: 0px;
+        text-align: center;
+        line-height: 21px;
+    }
+    
+    #ns3:hover {
+        background: linear-gradient(rgba(228, 169, 58, 0.86), rgba(0, 0, 0, 0.7)), url(images/e5.jpg);
+        background-size: cover;
+        height: 250px;
+        color: #000 !important;
+    }
+    
+    #ns4 {
+        background: linear-gradient(rgba(243, 175, 54, 1), rgba(223, 171, 64, 0.7)), url(images/e2.jpg);
+        background-size: cover;
+        color: red;
+        background-color: #e8af45;
+        height: 250px;
+    }
+    
+    .latest-blog-inner .latest-blog-title {
+        color: #d96741 !important;
+        font-size: 19px;
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        text-transform: capitalize;
+        line-height: 26px;
+        font-weight: 500;
+        margin-top: 15px;
+        margin-bottom: 3px;
+    }
+    
+    #ns4 h2 {
+        padding-top: 17px;
+        padding-bottom: 0px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 34px;
+        text-align: center;
+        font-weight: 900;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    #ns4 p {
+        padding: 30px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        padding-top: 0px;
+        text-align: center;
+        line-height: 21px;
+    }
+    
+    #ns4:hover {
+        background: linear-gradient(rgba(228, 169, 58, 0.86), rgba(0, 0, 0, 0.7)), url(images/e3.jpg);
+        background-size: cover;
+        height: 250px;
+        color: #000 !important;
+    }
+    
+    .bgcol {
+        width: 25%;
+        float: left;
+        clear: none;
+        padding: 10px;
+    }
+    
+    .fourcol {
+        width: 20%;
+        float: left;
+        clear: none;
+    }
+    
+    .fourcol .thumb {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .fourcolbx {
+        width: 100%;
+        float: left;
+        clear: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #2f2f2f;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .redmorebuton{
+    width: 46%;
+    padding: 10px;
+    background: #d96741;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    }
+    .fourcolbxview {
+        background: #000;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+        margin-top: 21%;
+        margin-bottom: 2%;
+        padding: 10px;
+        padding-bottom: 7px;
+        border-radius: 22px;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    .bannerimg {
+        background: url(images/Two-Children-Banner-1920x700-flip.jpg) 0 0 no-repeat;
+        padding-top: 7%;
+        background-size: cover;
+        padding-bottom: 4%;
+    }
+    
+    .bannerimg1 {
+        background: url(images/pratham_banner3.jpg) 0 0 no-repeat;
+        padding-top: 7%;
+        background-size: cover;
+        padding-bottom: 4%;
+    }
+    #bgvdcn {
+    color: #FFF;
+    top: 0px;
+    right: 0px;
+    bottom: 6px;
+    left: 0px;
+    padding-top: 10%;
+    /* background: url(../images/tint.png)repeat; */
+    position: absolute;
+}
+h2.mainheads {
+    font-family: 'Chunkfive';
+    font-weight: bold;
+    color: #d96741;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.videofont {
+    padding-bottom: 1%;
+    padding-top: 0%;
+    color: #FFF;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+.view {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid #fff;
+    width: 18% !important;
+    padding: 15px;
+    /* text-align: center; */
+}
+.view {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid #fff;
+    width: 12%;
+    padding: 12px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border:1px solid #FF9800;
+  border-radius: 100px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+<!--banner-starts-->
+<div class="banner" >
+    <div class="container">
+        <div class="banner-top">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="banner-text">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Aenean consectetur fringilla mi</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-text">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Aenean consectetur fringilla mi</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-text">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Aenean consectetur fringilla mi</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!--banner-end-->
+<!--FlexSlider-->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<script defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+<!--End-slider-script-->
+<!--help-starts-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="glyphicon glyphicon-chevron-up"></i></button>
+<div class="container">
+    <div class="col-lg-12 heading">
+        <h3 style="text-align: center;color: #D96741;font-size: 60px;">How can you help?</h3>
+        <div class="col-lg-8 col-lg-offset-4">
+            <h5>
+				No help is small
+			</h5>
+        </div>
+    </div>
+    <div class="col-lg-12" style="margin-top: 35px;">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="icon" style="text-align: center;">
+                <img src="images/capture.png">
+            </div>
+            <h3 class="boxsubhead" style="text-align: center;">DONATE </h3>
+            <p style="text-align: center;" class="space">Will you send a child to school? Would you help skill the young? Can you help a woman become financially self-reliant? Your support is vital. It does make a difference in their lives.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="icon" style="text-align: center;">
+                <img src="images/capture1.png">
+            </div>
+            <h3 class="boxsubhead" style="text-align: center;">VOLUNTEER </h3>
+            <p style="text-align: center;" class="space">MASSS facilitates volunteering from multiple countries across its various projects. Volunteers can offer their time, talent, resources, and skills in different domains, including the centres for the Young at Risk and in MASSS itself.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="icon" style="text-align: center;">
+                <img src="images/capture3.png">
+            </div>
+            <h3 class="boxsubhead" style="text-align: center;">SHARE</h3>
+            <p style="text-align: center;" class="space">Spread the word and share the goodness. Tell your friends and family about your experience with MASSS Tirupati.</p>
+        </div>
+    </div>
+</div>
+<!--help-end-->
+<!--start-banner-->
+
+<div style="margin-top: 20px">
+    <div class="bannerimg">
+        <div class="container" style="color: black">
+            <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6 heading">
+                    <h3 style="color: white">
+ Who we are
+</h3>
+                    <h5 align="center"><span class="side-efact">Actions speak louder</span></h5>
+                    <br>
+
+                    <br>
+                    <p>Masss - Mother Association Society for Social Service is the Development Organization. We assist and promote the development activities of NGOs, particularly the Don Bosco partners in Karnataka and Kerala. We are part of an international network of Don Bosco organizations working in over 130 countries across the globe. We draw our inspiration from Don Bosco, Priest and Educator of the 19th century, who dedicated his life to young people especially the marginalized. Children, young people and women have been the main target group of all our projects and programmes, as we believe that they are the most vulnerable and subject to abuse, neglect and exploitation.</p>
+                    <a href="" class="btn btn-md" style="background-color: #F37102;color: white; border-radius: 30px;">KNOW MORE &nbsp;<i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+                    <a href="" class="btn btn-md" style="background-color: #F65959;color: white; border-radius: 30px;">ANNUAL REPORTS &nbsp;<i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+
+                    <a href="" class="btn btn-md" style="background-color: #F37102;color: white; border-radius: 30px;">NEWSLETTER &nbsp;<i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!---end-banner--->
+<!--events-starts-->
+<div class="events">
+    <div class="container">
+        <div class="col-lg-12 heading">
+            <h3 style="text-align: center;color: #D96741;font-size: 60px;">What we do</h3>
+            <div class="col-lg-8 col-lg-offset-4">
+                <h5>
+				We are what we do
+			</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="">
+    <div class="fourcol">
+        <div class="thumb">
+            <img src="images/e2.jpg" alt="" class="img-fullwidth">
+        </div>
+        <div class="fourcolbx">Projects for Young at Risk</div>
+        <div class="fourcolbxview" style="background-color:#f79f17;">View Projects</div>
+    </div>
+</a>
+<a href="">
+    <div class="fourcol">
+        <div class="thumb">
+            <img src="images/e3.jpg" alt="" class="img-fullwidth"></div>
+        <div class="fourcolbx" style="background-color:#f79f17;">Education Projects</div>
+        <div class="fourcolbxview">View Projects</div>
+    </div>
+</a>
+<a href="">
+    <div class="fourcol">
+        <div class="thumb">
+            <img src="images/e4.jpg" alt="" class="img-fullwidth">
+        </div>
+        <div class="fourcolbx">SKILL TRAINING</div>
+        <div class="fourcolbxview" style="background-color:#f79f17;">View Projects</div>
+    </div>
+</a>
+<a href="">
+    <div class="fourcol">
+        <div class="thumb">
+            <img src="images/e5.jpg" alt="" class="img-fullwidth">
+        </div>
+        <div class="fourcolbx" style="background-color:#f79f17;">COMMUNITY DEVELOPMENT</div>
+        <div class="fourcolbxview">View Projects</div>
+    </div>
+</a>
+<a href="">
+    <div class="fourcol">
+        <div class="thumb">
+            <img src="images/e1.jpg" alt="" class="img-fullwidth">
+        </div>
+        <div class="fourcolbx">CREAM</div>
+        <div class="fourcolbxview" style="background-color:#f79f17;">View Projects</div>
+    </div>
+</a>
+
+</div>
+</div>
+
+<!--events-end-->
+<!--Newletter-banner-->
+
+<div style="margin-top: 270px">
+    <div class="bannerimg1">
+        <div class="container" style="color: red">
+            <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6 heading">
+                    <h3 style="color: white;">
+ CSR
+</h3>
+                    <h5 align="center"><span class="side-efact">Socially Committed</span></h5>
+                    <br>
+
+                    <br>
+                    <p style="color: white">Masss - Mother Association Society for Social Service is the Development Organization. We assist and promote the development activities of NGOs, particularly the Don Bosco partners in Karnataka and Kerala. We are part of an international network of Don Bosco organizations working in over 130 countries across the globe. We draw our inspiration from Don Bosco, Priest and Educator of the 19th century, who dedicated his life to young people especially the marginalized. Children, young people and women have been the main target group of all our projects and programmes, as we believe that they are the most vulnerable and subject to abuse, neglect and exploitation.</p>
+                    <a href="" class="btn btn-md" style="background-color: #F37102;color: white; border-radius: 30px;">KNOW MORE &nbsp;<i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="imgg" style="margin-top: 10px">
+            <div id="ns1" class="bgcol">
+                <h2 data-animation-duration="2000" data-value="7000" class="animate-number text-theme-colored font-42 font-weight-700 mt-0 mb-0 appeared">7,000</h2>
+                <p>
+
+                    Children are rescued
+                    <br> from the street and
+                    <br> from child labour
+                    <br> every year.</p>
+
+            </div>
+            <div id="ns4" class="bgcol">
+                <h2 data-animation-duration="2000" data-value="7000" class="animate-number text-theme-colored font-42 font-weight-700 mt-0 mb-0 appeared">7,000</h2>
+                <p>
+
+                    Children are rescued
+                    <br> from the street and
+                    <br> from child labour
+                    <br> every year.</p>
+
+            </div>
+            <div id="ns2" class="bgcol">
+                <h2 data-animation-duration="2000" data-value="7000" class="animate-number text-theme-colored font-42 font-weight-700 mt-0 mb-0 appeared">7,000</h2>
+                <p>
+
+                    Children are rescued
+                    <br> from the street and
+                    <br> from child labour
+                    <br> every year.</p>
+
+            </div>
+            <div id="ns3" class="bgcol">
+                <h2 data-animation-duration="2000" data-value="7000" class="animate-number text-theme-colored font-42 font-weight-700 mt-0 mb-0 appeared">7,000</h2>
+                <p>
+
+                    Children are rescued
+                    <br> from the street and
+                    <br> from child labour
+                    <br> every year.</p>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---end-newsletter-banner--->
+<!---recent-events--->
+<div class="container">
+    <div class="col-lg-12 heading">
+        <h3 style="text-align: center;color: #D96741;font-size: 60px;">Recent Events</h3>
+        <div class="col-lg-8 col-lg-offset-4">
+            <h5>
+				We did it together
+			</h5>
+        </div>
+    </div>
+</div>
+<!---end-recent-events--->
+<!---slider1--->
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e3.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+The Blessing…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">February 6th, 2019</p>
+                            <p>
+                                The Right to Education Act enacted in 2009 reiterate the importance of free and </p>
+                            <div class="redmorebuton"><a href="" style="color: #fff;">Read more...</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e2.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+Exploring new…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">February 4th, 2019</p>
+                            <p>
+                                India is home to the largest number of children in the world and their exposure </p>
+                            <div class="redmorebuton"><a href="" style="color: #fff;">Read more...</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e3.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+No tolerance…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">January 22nd, 2019</p>
+                            <p>
+                                On 16th &amp; 17th December 2018, Don Bosco Hospet conducted capacity building t</p>
+                            <div class="redmorebuton"><a href="" style="color: #fff;">Read more...</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e5.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+New year…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">January 19th, 2019</p>
+                            <p>
+                                Today the world has achieved progress relatively in all the fields, the scientif</p>
+                            <div class="redmorebuton"><a href="" style="color: #fff;">Read more...</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e3.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+The Blessing…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">February 6th, 2019</p>
+                            <p>
+                                The Right to Education Act enacted in 2009 reiterate the importance of free and </p>
+                            <div class="redmorebuton"><a href="" style="color: #fff;">Read more...</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/g1.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+Exploring new…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">February 4th, 2019</p>
+                            <p>
+                                India is home to the largest number of children in the world and their exposure </p>
+                            <div class="redmorebuton"><a href="" style="color: #fff;">Read more...</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e3.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+No tolerance…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">January 22nd, 2019</p>
+                            <p>
+                                On 16th &amp; 17th December 2018, Don Bosco Hospet conducted capacity building t</p>
+                            <div class="redmorebuton"><a href="" style="color: #fff;">Read more...</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e5.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+New year…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">January 19th, 2019</p>
+                            <p>
+                                Today the world has achieved progress relatively in all the fields, the scientif</p>
+                            <div class="redmorebuton"><a href="" style="color: #fff;">Read more...</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+<ul class="control-box pager">
+<li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+<li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></a></li><a data-slide="next" href="#myCarousel" class="">
+</a></ul><a data-slide="next" href="#myCarousel" class="">
+ </a></nav>
+    </div>
+</div>
+<!-- Left and right controls -->
+
+</div>
+</div>
+<!---end-slider1--->
+<!---video--->
+<section id="fh5co-trustedv" style="position: relative;">
+<div class="video" id="prlx">
+<video autoplay="autoplay" id="full-video" style="width:100%" title="1920" loop="" muted="">  
+<source src="images/KGF.mp4" type="video/mp4" width="100" height="31" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> /&gt;
+</video>
+ <!--<div class="hidden1"><img src="https://breadsbangalore.org/wp-content/themes/Breads//images/1.jpg"></div>
+ <div  class="hidden2"><img src="" /><img src="images/tint.png"></div>------>
+<div id="bgvdcn">
+ <div class="container-fluid ">
+<div class="bighead">
+<h2 class="mainheads" style="color: #fff;line-height: 14px;">Watch Video</h2>
+<h3 class="videofont"><center> Developing the habit of sharing among children</center></h3>
+</div>
+<center>
+<div class="view" style="color:#FFF;"><a href="" style="color:#FFF;">View More</a></div></center>
+ </div>
+ </div>
+</div>
+</section>
+
+<!---end-video--->
+<!---start-gallery--->
+<div class="container">
+    <div class="col-lg-12 heading">
+        <h3 style="text-align: center;color: #D96741;font-size: 60px;">Gallery</h3>
+        <div class="col-lg-8 col-lg-offset-4">
+            <h5>
+				Picture that tells stories
+			</h5>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
+	<div class="col-lg-3">
+		<img alt="project" src="images/e1.jpg" class="img-fullwidth">
+	</div>
+	<div class="col-lg-3">
+		<img alt="project" src="images/e2.jpg" class="img-fullwidth">
+	</div>
+	<div class="col-lg-3">
+		<img alt="project" src="images/e3.jpg" class="img-fullwidth">
+	</div>
+	<div class="col-lg-3">
+		<img alt="project" src="images/e4.jpg" class="img-fullwidth">
+	</div>
+</div>
+	<div class="col-lg-12" style="margin-top: 10px">
+	<div class="col-lg-3">
+		<img alt="project" src="images/g1.jpg" class="img-fullwidth">
+	</div>
+	<div class="col-lg-3">
+		<img alt="project" src="images/g2.jpg" class="img-fullwidth">
+	</div>
+	<div class="col-lg-3">
+		<img alt="project" src="images/g-3.jpg" class="img-fullwidth">
+	</div>
+	<div class="col-lg-3">
+		<img alt="project" src="images/g-4.jpg" class="img-fullwidth">
+	</div>
+</div>
+<!---end-gallery--->
+<div class="container">
+    <div class="col-lg-12 heading">
+        <h3 style="text-align: center;color: #D96741;font-size: 60px;">Blog</h3>
+        <div class="col-lg-8 col-lg-offset-4">
+            <h5>
+				Positive mind, vibes, stories
+			</h5>
+        </div>
+    </div>
+</div>
+ <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e3.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+The Blessing…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">February 6th, 2019</p>
+                            <p>
+                                The Right to Education Act enacted in 2009 reiterate the importance of free and </p>
+                            <a href="" style="color: black;">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/g1.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+Exploring new…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">February 4th, 2019</p>
+                            <p>
+                                India is home to the largest number of children in the world and their exposure </p>
+                            <a href="" style="color: black;">Read more...</a></div>
+                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e3.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+No tolerance…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">January 22nd, 2019</p>
+                            <p>
+                                On 16th &amp; 17th December 2018, Don Bosco Hospet conducted capacity building t</p>
+                            <a href="" style="color: black;">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fff our-latest-box" style="margin-top: 30px;">
+                    <div class="latest-blog-img">
+                        <div class="inner-grid">
+                            <a href=""><img class="img-responsive" src="images/e5.jpg" width="800" height="500"></a>
+                        </div>
+                        <div class="latest-blog-inner">
+                            <a class="latest-blog-title" style="" href="">
+New year…</a>
+                            <p style="font-size: 14px;margin-bottom: 2px;color:#272525;">January 19th, 2019</p>
+                            <p>
+                                Today the world has achieved progress relatively in all the fields, the scientif</p>
+                            <a href="" style="color: black;">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+<!--team-starts-->
+<div class="team">
+   <div class="container">
+    <div class="col-lg-12 heading">
+        <h3 style="text-align: center;color: #D96741;font-size: 60px;">Our Donors</h3>
+        <div class="col-lg-8 col-lg-offset-4">
+            <h5>
+				ANYBODY CAN DONATE
+			</h5>
+        </div>
+    </div>
+        <div class="team-bottom">
+            <div class="col-md-3 team-left wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+                <a href="#">
+                    <img src="images/t1.jpg" alt="">
+                    <div class="captn">
+                        <h4>Jane Doe</h4>
+                        <p>Nam id urna ipsum</p>
+                    </div>
+                    <div class="team-text">
+                        <h5>Jane Doe</h5>
+                        <p>Nam id urna ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 team-left wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+                <a href="#">
+                    <img src="images/t2.jpg" alt="">
+                    <div class="captn">
+                        <h4>Adaline</h4>
+                        <p>Nam id urna ipsum</p>
+                    </div>
+                    <div class="team-text">
+                        <h5>Adaline</h5>
+                        <p>Nam id urna ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 team-left wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+                <a href="#">
+                    <img src="images/t3.jpg" alt="">
+                    <div class="captn">
+                        <h4>Thomas</h4>
+                        <p>Nam id urna ipsum</p>
+                    </div>
+                    <div class="team-text">
+                        <h5>Thomas</h5>
+                        <p>Nam id urna ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 team-left wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+                <a href="#">
+                    <img src="images/t4.jpg" alt="">
+                    <div class="captn">
+                        <h4>Selena</h4>
+                        <p>Nam id urna ipsum</p>
+                    </div>
+                    <div class="team-text">
+                        <h5>Selena</h5>
+                        <p>Nam id urna ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--team-end-->
+<!--address-starts-->
+<div class="address">
+    <div class="container">
+        <div class="address-top">
+            <div class="col-md-4 add-left">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                <p>
+                    <label>Company name.</label>
+                    795 Folsom Ave, Suite 600 San Francisco, CA 94107</p>
+            </div>
+            <div class="col-md-4 add-left">
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                <p>+122 235 5689 ,
+                    <br>+132 326 3695</p>
+            </div>
+            <div class="col-md-4 add-left">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <p><a href="mailto:example@email.com">contact@example.com</a></p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--address-end-->
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>

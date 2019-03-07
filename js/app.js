@@ -1,0 +1,23 @@
+var app = angular.module("myapp",["ngRoute"]);
+app.config(function($routeProvider){
+$routeProvider
+.when("/",{
+	templateUrl:"views/Home.html"
+}).when("/Home",{
+	templateUrl:"views/Home.html"
+}).when("/CSR",{
+	templateUrl:"views/CSR.html"
+}).when("/Internship",{
+	templateUrl:"views/Internship.html"
+}).when("/Volunteer",{
+	templateUrl:"views/Volunteer.html"
+}).when("/ProjectForYoung",{
+	templateUrl:"views/ProjectForYoung.html"
+}).when("/educational-projects",{
+	templateUrl:"views/educational-projects.html"
+}).when("/skill-training",{
+	templateUrl:"views/skill-training.html"
+}).when("/community-development",{
+	templateUrl:"views/community-development.html"
+})
+});
